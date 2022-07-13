@@ -17,6 +17,9 @@ npm run seed
 npm start
 <br>
 <br>
+<br>
 This website can be accessed at:
 
+## Screenshot
 
+![Screen Shot 2022-07-12 at 9 50 22 PM (2)](https://user-images.githubusercontent.com/105219789/178633924-771b32e5-4597-4983-967c-e767c8dee9fa.png)
