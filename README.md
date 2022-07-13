@@ -15,9 +15,9 @@ npm i
 npm run seed
 <br>
 npm start
-<br>
-<br>
-<br>
+
+
+
 This website can be accessed at:
 https://fast-crag-06988.herokuapp.com/
 
