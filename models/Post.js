@@ -19,9 +19,6 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    species: {
-      type: DataTypes.STRING,
-    },
     description: {
       type: DataTypes.TEXT,
     },
