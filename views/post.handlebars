@@ -1,0 +1,31 @@
+<div class="text-center">
+  <h2 class="custom-post-title-post">{{title}}</h2>
+  <p>{{description}}</p>
+  <p>Posted by {{user.username}} on {{format_date post_date}}</p>
+
+  {{#each comments as |comment| }}
+
+  <div class="commentBox">
+    <div class="commentContents">
+    <h5 class="author">Comment posted by {{comment.user.username}} on {{format_date comment.post_date}}</h5>
+    <p class="commentText"> {{comment.response}}</p>
+
+    <!-- upvote icon with several properties to pass in if it is clicked-->
+    <i class="fas fa-thumbs-up" id="thumbup" data-id="{{comment.id}}" data-upvotes="{{comment.thumbs_up}}" data-commenter="{{comment.user_id}}"></i> <h5>{{comment.thumbs_up}} upvotes</h5>
+        </div>
+  </div>
+  {{/each}}
+
+  <form class="form new-comment-form">
+      <div class="form-group">
+        <label for="comment">Comment:</label>
+        <textarea class="form-input" id="comment" name="comment"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Post comment</button>
+      </div>
+    </form>
+
+
+
+<script src="../js/post.js"></script>

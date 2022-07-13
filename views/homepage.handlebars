@@ -1,0 +1,17 @@
+<!-- Loop over each object in the projects array -->
+{{#each posts as |post| }}
+<div class="row mb-4 post">
+  <div class="col-md-5">
+    <h2 class="custom-post-title-home">
+
+      <a href="/post/{{post.id}}">{{post.title}}</a>
+    </h2>
+    <p>Posted by {{post.user.username}} on {{format_date post.post_date}}</p>
+  </div>
+  <div class="col-md-7">
+    <p>
+      {{post.description}}
+    </p>
+  </div>
+</div>
+{{/each}}
